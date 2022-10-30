@@ -31,6 +31,10 @@ if %SteamAppId%==1151640 (
 
 set "CONFIGPATH=%USERPROFILE%\%GAMECONFIGDIR%\%GAMECONFIG%"
 
+if %SteamAppId%==601150 (
+            set "GAMECONFIG=%INSTALLDIR%\dmc5config.ini"
+)
+
 :: if this is defined then it's a game in the list so use the workaround
 if defined GAMECONFIG (goto workaround)
 :: else just run the game

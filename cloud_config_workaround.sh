@@ -27,6 +27,10 @@ case ${SteamAppId} in
         CONFIG_PATH="Documents/Horizon Zero Dawn/Saved Game/profile"
         CONFIG="graphicsconfig.ini"
         ;;
+    601150)
+        CONFIG_PATH="${STEAM_COMPAT_INSTALL_PATH}"
+        CONFIG="dmc5config.ini"
+        ;;
     *)
         CONFIG="error"
         ;;
